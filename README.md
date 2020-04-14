@@ -1,13 +1,7 @@
-[![License badge](https://img.shields.io/badge/license-Apache2-orange.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Documentation Status](https://readthedocs.org/projects/openviduio-docs/badge/?version=stable)](https://docs.openvidu.io/en/stable/?badge=stable)
-[![Docker badge](https://img.shields.io/docker/pulls/fiware/orion.svg)](https://hub.docker.com/r/openvidu/classroom-demo/)
-[![Support badge](https://img.shields.io/badge/support-sof-yellowgreen.svg)](https://groups.google.com/forum/#!forum/openvidu)
+git clone https://github.com/Ov3rControl/live-test.git
+cd openvidu-call-react
+npm install
+npm start
 
-[![][OpenViduLogo]](http://openvidu.io)
-
-openvidu-call-react
-===
-You can see the documentation [here](https://openvidu.io/docs/demos/openvidu-call-react/)
-
-
-[OpenViduLogo]: https://secure.gravatar.com/avatar/5daba1d43042f2e4e85849733c8e5702?s=120
+run docker server
+docker run -p 4443:4443 --rm -e openvidu.secret=MY_SECRET -e openvidu.publicurl=https://YOUR_IP:4443/ openvidu/openvidu-server-kms:2.12.0
