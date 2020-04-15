@@ -17,7 +17,7 @@ class VideoRoomComponent extends Component {
     super(props);
     this.OPENVIDU_SERVER_URL = this.props.openviduServerUrl
       ? this.props.openviduServerUrl
-      : 'https://' + window.location.hostname + ':4443';
+      : 'https://104.248.44.106:4443';
     this.OPENVIDU_SERVER_SECRET = this.props.openviduSecret
       ? this.props.openviduSecret
       : 'MY_SECRET';
